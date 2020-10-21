@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><
     <title>post-survey survey</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -12,7 +12,49 @@
         <h1>Post-Survey Survey</h1>
         <p>thank you disgruntled sir/ma'am for taking the previous survey!</p>
         <p>here's another one to gauge your thoughts on the previous survey!</p>
-        
+        <!-- Q1 -->
+        <div class="pt-5">
+          <h3>On a scale of "blistering mad" to "ehhhhhh", how much did the previous survey offend you?</h3> 
+          <select class="form-control" id="feelings">
+            <option>Blistering mad</option>
+            <option>Furious</option>
+            <option>Just need to walk it off</option>
+            <option>ehhhhhhh</option>
+          </select>
+        </div>
+        <!-- Q2 -->
+        <div class="pt-5">
+            <h3>During the last survey, in what way(s) did you fantasize assaulting the survey administrator?</h3>
+            <form id="form-radio">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="expressions" value="kick">
+                        kick in the shins
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="expressions" value="bees">
+                        a bucket of bees and kick in the shins
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="expressions" value="marbles">
+                        slippery marbles, a bucket of bees, and a kick in the shins
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- Q3 -->
+        <div class="pt-5">
+          <h3>Please rant out your suppressed feelings here:</h3>
+          <form id="form-text">
+            <div class="form-group">
+              <input id="rant" class="form-control" type="text" value="1-character-max">
+            </div>
+          </form>
+        </div>
     </div>
 </body>
 </html>
@@ -21,20 +63,7 @@
 
 <!-- 
     
-    selection
-    p - on a scale from "blistering mad" to "eh" how offended were you?
 
-    selection input
-    option - blistering mad
-    option - mad
-    option - eh
-
-    radio input
-    "during the last survey, in what ways did you fantasize assualtiong the survey administrator?"
-    -kick in the shins
-    -kick in the shins and bucket of bees
-    -kick in the shins, bucket of bees, firehose full of 
-    -kick in the shins, bucket of bees, 
 
 
     text field input
