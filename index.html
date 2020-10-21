@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><
+<head>
     <title>post-survey survey</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -13,68 +13,56 @@
         <p>thank you disgruntled sir/ma'am for taking the previous survey!</p>
         <p>here's another one to gauge your thoughts on the previous survey!</p>
         <!-- Q1 -->
-        <div class="pt-5">
-          <h3>On a scale of "blistering mad" to "ehhhhhh", how much did the previous survey offend you?</h3> 
-          <select class="form-control" id="feelings">
-            <option>Blistering mad</option>
-            <option>Furious</option>
-            <option>Just need to walk it off</option>
-            <option>ehhhhhhh</option>
-          </select>
-        </div>
-        <!-- Q2 -->
-        <div class="pt-5">
-            <h3>During the last survey, in what way(s) did you fantasize assaulting the survey administrator?</h3>
-            <form id="form-radio">
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="expressions" value="kick">
-                        kick in the shins
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="expressions" value="bees">
-                        a bucket of bees and kick in the shins
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="expressions" value="marbles">
-                        slippery marbles, a bucket of bees, and a kick in the shins
-                    </label>
-                </div>
-            </form>
-        </div>
-        <!-- Q3 -->
-        <div class="pt-5">
-          <h3>Please rant out your suppressed feelings here:</h3>
-          <form id="form-text">
-            <div class="form-group">
-              <input id="rant" class="form-control" type="text" value="1-character-max">
-            </div>
-          </form>
-        </div>
+        <form id="survey">
+          <div class="pt-5">
+            <h3>On a scale of "blistering mad" to "ehhhhhh", how much did the previous survey offend you?</h3> 
+            <select class="form-control" id="feelings">
+              <option>Blistering mad</option>
+              <option>Furious</option>
+              <option>Just need to walk it off</option>
+              <option>ehhhhhhh</option>
+            </select>
+          </div>
+          <!-- Q2 -->
+          <div class="pt-5">
+              <h3>During the last survey, in what way(s) did you fantasize assaulting the survey administrator?</h3>
+                  <div class="radio">
+                      <label>
+                          <input type="radio" name="expressions" value="kick">
+                          a kick in the shins
+                      </label>
+                  </div>
+                  <div class="radio">
+                      <label>
+                          <input type="radio" name="expressions" value="bees">
+                          a bucket of bees and a kick in the shins
+                      </label>
+                  </div>
+                  <div class="radio">
+                      <label>
+                          <input type="radio" name="expressions" value="marbles">
+                          slippery marbles, a bucket of bees, and a kick in the shins
+                      </label>
+                  </div>
+          </div>
+          <!-- Q3 -->
+          <div class="pt-5">
+            <h3>Please rant out your suppressed feelings here:</h3>
+              <div class="form-group">
+                <input id="rant" class="form-control" type="text" value="1-character-max">
+              </div>
+          </div>
+          <!-- Q4 -->
+          <div class="pt-5">
+              <h3>Please select date to take post-post-survey survey!</h3>
+              <div class="form-group">
+                  <label>Choose Date:</label>
+                  <input id="date" class="form-control" type="date">
+              </div>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
 
-
-
-<!-- 
-    
-
-
-
-    text field input
-    please rant out your feelings here!
-    label
-    input
-    
-    date input
-    div
-    label
-    input
-     - please select date to take post-post-survey survey
-
- -->
